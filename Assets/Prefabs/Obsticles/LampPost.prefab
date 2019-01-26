@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4162560494094968}
   - component: {fileID: 33655231283498974}
   - component: {fileID: 23292494096548272}
+  - component: {fileID: 65853154464248274}
   m_Layer: 0
   m_Name: LampPost
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1307705198916798}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.18, y: -1.2602634, z: -3.79}
+  m_LocalPosition: {x: 0.9180443, y: -1.0829679, z: -4.6911945}
   m_LocalScale: {x: 2.7565079, y: 2.7565079, z: 2.7565079}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,7 +49,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1307705198916798}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1307705198916798}
   m_Mesh: {fileID: 4300000, guid: 91ae90526befc914abd8d39ad2ce9772, type: 3}
+--- !u!65 &65853154464248274
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307705198916798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.18541162, y: 1.0698636, z: 0.1854117}
+  m_Center: {x: 0.00000000745058, y: 0.53419375, z: 0.00000001117587}

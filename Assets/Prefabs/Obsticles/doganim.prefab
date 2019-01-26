@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 95600031447837114}
   m_Layer: 0
   m_Name: doganim
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -259,15 +259,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1855499479155734}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5671239, y: -1.0829679, z: 19.194185}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 1.6673403, y: -1.0829679, z: -5.0068073}
   m_LocalScale: {x: 1.5000237, y: 1.5000237, z: 1.5000237}
   m_Children:
   - {fileID: 4653366531647588}
   - {fileID: 4383377310336824}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4101493334330102
 Transform:
   m_ObjectHideFlags: 1

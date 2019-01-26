@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4413573309661794}
   - component: {fileID: 33573136550384398}
   - component: {fileID: 23793228483936832}
+  - component: {fileID: 65724217599326522}
   m_Layer: 0
   m_Name: MailBox
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1370372524965812}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.6468574, y: -1.0829679, z: -3.809246}
+  m_LocalPosition: {x: 2.3137739, y: -1.0829679, z: -4.763626}
   m_LocalScale: {x: 2.4573834, y: 2.4573834, z: 2.4573834}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1370372524965812}
   m_Mesh: {fileID: 4300000, guid: 6117930f16b863244937bca6db8d963b, type: 3}
+--- !u!65 &65724217599326522
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370372524965812}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.26056492, y: 0.41425776, z: 0.21838707}
+  m_Center: {x: -3.1763736e-22, y: 0.20406783, z: -0.000000022351747}

@@ -23,15 +23,15 @@ public class player : MonoBehaviour
     public float addTime = 0.2f;
     private float addTimer = 0;
 
-    float startY;
-
-    public int lives = 5;
+    float startY;    
 
     // Use this for initialization
     void Start ()
     {
         manager = GetComponentInParent<GameMan>();
-        startY = transform.position.y;        
+        startY = transform.position.y;
+
+        GetComponent<Animator>().SetFloat("Offset", Random.Range(0.0f, 1.0f));
     }
 	
 	// Update is called once per frame
@@ -76,7 +76,16 @@ public class player : MonoBehaviour
 
         laneIndex = Mathf.Clamp(laneIndex, 0, manager.Lanes.Length - 1);
 
-        transform.position = Vector3.Lerp(transform.position, manager.GetLanePosition(laneIndex, playerIndex), lerpSpeed);
 
+        transform.position = Vector3.Lerp(transform.position, manager.GetLanePosition(laneIndex, playerIndex), lerpSpeed);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Junk"))
+        {
+            manager.Hit(playerIndex == 0);
+            GetComponent<Animator>().SetTrigger("Hit");
+        }
     }
 }

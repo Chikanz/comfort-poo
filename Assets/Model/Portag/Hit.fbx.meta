@@ -1,61 +1,57 @@
 fileFormatVersion: 2
-guid: 0037da161d937564b8b63fa243f149ed
+guid: f3c41527cbe39554faa4d6f79dc71b2f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: Chest
     100002: Head
     100004: Hip
-    100006: ikHandle1
-    100008: ikHandle2
-    100010: LAnkle
-    100012: LCollar
-    100014: LElbow
-    100016: LKnee
-    100018: LShoulder
-    100020: LThigh
-    100022: LToes
-    100024: LWrist
-    100026: Protag
-    100028: //RootNode
-    100030: RAnkle
-    100032: RCollar
-    100034: RElbow
-    100036: RKnee
-    100038: RShoulder
-    100040: RThigh
-    100042: RToes
-    100044: RWrist
-    100046: Spine
+    100006: //RootNode
+    100008: ikHandle1
+    100010: ikHandle2
+    100012: LAnkle
+    100014: LCollar
+    100016: LElbow
+    100018: LKnee
+    100020: LShoulder
+    100022: LThigh
+    100024: LToes
+    100026: LWrist
+    100028: RAnkle
+    100030: RCollar
+    100032: RElbow
+    100034: RKnee
+    100036: RShoulder
+    100038: RThigh
+    100040: RToes
+    100042: RWrist
+    100044: Spine
     400000: Chest
     400002: Head
     400004: Hip
-    400006: ikHandle1
-    400008: ikHandle2
-    400010: LAnkle
-    400012: LCollar
-    400014: LElbow
-    400016: LKnee
-    400018: LShoulder
-    400020: LThigh
-    400022: LToes
-    400024: LWrist
-    400026: //RootNode
-    400028: Protag
-    400030: RAnkle
-    400032: RCollar
-    400034: RElbow
-    400036: RKnee
-    400038: RShoulder
-    400040: RThigh
-    400042: RToes
-    400044: RWrist
-    400046: Spine
-    2100000: lambert1
-    4300000: Protag
+    400006: //RootNode
+    400008: ikHandle1
+    400010: ikHandle2
+    400012: LAnkle
+    400014: LCollar
+    400016: LElbow
+    400018: LKnee
+    400020: LShoulder
+    400022: LThigh
+    400024: LToes
+    400026: LWrist
+    400028: RAnkle
+    400030: RCollar
+    400032: RElbow
+    400034: RKnee
+    400036: RShoulder
+    400038: RThigh
+    400040: RToes
+    400042: RWrist
+    400044: Spine
     7400000: Take 001
+    7400002: Inbetween
     9500000: //RootNode
-    13700000: Protag
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -87,16 +83,44 @@ ModelImporter:
     - serializedVersion: 16
       name: Take 001
       takeName: Take 001
-      firstFrame: 1
-      lastFrame: 300
+      firstFrame: 510
+      lastFrame: 530
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Inbetween
+      takeName: Take 001
+      firstFrame: 517
+      lastFrame: 518
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0

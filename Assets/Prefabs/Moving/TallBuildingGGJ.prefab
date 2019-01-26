@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4712506905510534}
   - component: {fileID: 33491505164585220}
   - component: {fileID: 23299764945206678}
+  - component: {fileID: 65951924684941656}
   m_Layer: 0
   m_Name: TallBuildingGGJ
   m_TagString: Untagged
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1124527596364266}
   m_Mesh: {fileID: 4300000, guid: 22dd580559344ae4890b169c2ea9504c, type: 3}
+--- !u!65 &65951924684941656
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1124527596364266}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1, y: 0.1, z: 0.1}
+  m_Center: {x: -0.0065851207, y: 1.148627, z: 0.14254911}

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4659735642816308}
   m_Layer: 0
   m_Name: Chair
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4146658246948978}
   - component: {fileID: 33958165452670578}
   - component: {fileID: 23305372340261714}
+  - component: {fileID: 65917194476755364}
   m_Layer: 0
   m_Name: BenchGGJ
   m_TagString: Untagged
@@ -63,7 +64,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1494267248400814}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -6.386545, y: -1.085, z: 17.120277}
+  m_LocalPosition: {x: 0.35648632, y: -1.0829679, z: -5.80249}
   m_LocalScale: {x: 2.221157, y: 2.221157, z: 2.221157}
   m_Children:
   - {fileID: 4146658246948978}
@@ -112,3 +113,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1868166044337414}
   m_Mesh: {fileID: 4300000, guid: 63d9d4564c77084498c946357465584e, type: 3}
+--- !u!65 &65917194476755364
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1868166044337414}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.42702997, y: 0.34809345, z: 0.68625104}
+  m_Center: {x: 0, y: 0, z: 0.000000014901161}

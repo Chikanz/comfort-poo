@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4810861472607760}
   - component: {fileID: 33972830473816010}
   - component: {fileID: 23725564324287246}
+  - component: {fileID: 65648925210891496}
   m_Layer: 0
   m_Name: TrashCan
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168977146944582}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.39, y: -1.0829679, z: -3.67}
+  m_LocalPosition: {x: 1.7072449, y: -1.0829679, z: -4.825144}
   m_LocalScale: {x: 1.7207, y: 1.7207, z: 1.7207}
   m_Children: []
   m_Father: {fileID: 0}
@@ -48,7 +49,7 @@ MeshRenderer:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168977146944582}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 2
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
   m_MotionVectors: 1
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1168977146944582}
   m_Mesh: {fileID: 4300000, guid: 04c4121c44f1d9d48b274caa85453b44, type: 3}
+--- !u!65 &65648925210891496
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1168977146944582}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.33719543, y: 0.36977714, z: 0.3146335}
+  m_Center: {x: 0.00000005215407, y: 0.18208408, z: 0}
