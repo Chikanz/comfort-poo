@@ -69,7 +69,7 @@ GameObject:
   - component: {fileID: 65927580654560848}
   m_Layer: 0
   m_Name: NPC
-  m_TagString: Untagged
+  m_TagString: Junk
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -629,7 +629,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1119254579618228}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.9938154, y: -1.0829679, z: 0.15353012}
+  m_LocalPosition: {x: 3.4551773, y: -1.0829679, z: 18.036997}
   m_LocalScale: {x: 10.759, y: 10.759, z: 10.759}
   m_Children:
   - {fileID: 4955210882902802}
@@ -720,8 +720,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.076257795, y: 0.1549952, z: 0.028808871}
-  m_Center: {x: 0.00094285473, y: 0.06873279, z: 0.0010104481}
+  m_Size: {x: 0.08809818, y: 0.15499519, z: 0.028808871}
+  m_Center: {x: 0.0013730286, y: 0.06873279, z: 0.0010104481}
 --- !u!95 &95614111534690504
 Animator:
   serializedVersion: 3

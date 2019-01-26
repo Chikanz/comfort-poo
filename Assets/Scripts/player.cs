@@ -17,8 +17,7 @@ public class player : MonoBehaviour
 
     private bool jumping;
     public float jumpForce;
-    Vector3 jumpVector;
-    public float windTime = 1;
+    Vector3 jumpVector;    
 
     public float addTime = 0.2f;
     private float addTimer = 0;

@@ -102,7 +102,7 @@ public class GameMan : MonoBehaviour
         Vector3 forwardVec = Vector3.zero;
         if (inFront != null)
         {
-             forwardVec = inFront.Value && player == 0 ? Vector3.forward * 0.5f : Vector3.zero;           
+             forwardVec = inFront.Value && player == 0 || !inFront.Value && player == 1 ? Vector3.forward * 1f : Vector3.zero;           
         }
 
         playerLanes[player] = lane; //Update lane in manager        
