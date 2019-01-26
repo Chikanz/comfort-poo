@@ -35,6 +35,12 @@ public class player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        //Clamp Jump
+        if (transform.position.y < startY)
+        {
+            transform.position = new Vector3(transform.position.x, startY, transform.position.z);
+        }
+
         if (!jumping)
         {
             if (Input.GetKeyDown(GetLeft))
@@ -48,15 +54,13 @@ public class player : MonoBehaviour
             }
 
             if(Input.GetKeyDown(GetJump))
-            {                
-                Debug.Log("Jump");
+            {                                
                 jumping = true;
                 addTimer = addTime;
             }
         }
         else if(jumping)
         {
-            Debug.Log(addTimer);
             if(addTimer > 0)
             {
                 Velocity += new Vector3(0, jumpForce, 0);
@@ -68,7 +72,7 @@ public class player : MonoBehaviour
 
             if(transform.position.y <= startY)
             {
-                jumping = false;
+                jumping = false;                
             }
         }
 
