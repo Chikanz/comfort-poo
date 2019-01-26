@@ -893,7 +893,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1830286977507764}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.34, y: -0.5227065, z: 0.1}
+  m_LocalPosition: {x: -2.25, y: -0.5956744, z: -0.02}
   m_LocalScale: {x: 1.48592, y: 1.48592, z: 1.48592}
   m_Children:
   - {fileID: 4646671312269806}
@@ -1045,11 +1045,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIndex: 1
   lerpSpeed: 0.25
-  Velocity: {x: 0, y: 0, z: 0}
-  Acceleration: {x: 0, y: -0.125, z: 0}
-  jumpForce: 0.4
+  Velocity: {x: 0, y: -0.14998539, z: 0}
+  Acceleration: {x: 0, y: -0.05, z: 0}
+  jumpForce: 0.125
   windTime: 0.5
-  addTime: 0.2
+  addTime: 0.15
 --- !u!137 &137240002233890930
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

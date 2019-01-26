@@ -29,7 +29,8 @@ public class GameMan : MonoBehaviour
     void SpawnObsticle()
     {
         var g = Obsticles[Random.Range(0, Obsticles.Length)];
-        var instance = Instantiate(g, Lanes[Random.Range(0, Lanes.Length)].transform.position, g.transform.rotation);
+        //ohhhhhh yeah
+        var instance = Instantiate(g, Lanes[Random.Range(0, Lanes.Length)].transform.position + Vector3.left * players[0].GetComponentInChildren<BoxCollider>().bounds.extents.magnitude/2, g.transform.rotation); 
         var p = instance.transform.position;
         instance.transform.position = new Vector3(p.x, p.y, spawnZ);
         Invoke(nameof(SpawnObsticle), Random.Range(ObsticleTimer.x, ObsticleTimer.y));

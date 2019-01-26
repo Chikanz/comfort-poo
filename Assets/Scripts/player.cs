@@ -25,6 +25,8 @@ public class player : MonoBehaviour
 
     float startY;
 
+    public int lives = 5;
+
     // Use this for initialization
     void Start ()
     {
@@ -35,12 +37,6 @@ public class player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        //Clamp Jump
-        if (transform.position.y < startY)
-        {
-            transform.position = new Vector3(transform.position.x, startY, transform.position.z);
-        }
-
         if (!jumping)
         {
             if (Input.GetKeyDown(GetLeft))
@@ -66,11 +62,13 @@ public class player : MonoBehaviour
                 Velocity += new Vector3(0, jumpForce, 0);
                 addTimer -= Time.deltaTime;
             }            
+            else
+                Velocity += Acceleration;   
 
             transform.position += Velocity;
-            Velocity += Acceleration;   
+            
 
-            if(transform.position.y <= startY)
+            if(transform.position.y <= startY && addTimer <= 0)
             {
                 jumping = false;                
             }
