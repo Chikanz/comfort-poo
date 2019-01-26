@@ -9,11 +9,20 @@ public class GameMan : MonoBehaviour
     private player[] players;
     private int[] playerLanes;
 
+    [Header("Env")]
+    public GameObject[] Obsticles;
+    public Vector2 ObsticleTimer;
+
 	// Use this for initialization
 	void Start ()
     {
         players = GetComponentsInChildren<player>();
         playerLanes = new int[players.Length];
+    }
+
+    void SpawnObsticle()
+    {
+
     }
 	
 	// Update is called once per frame
