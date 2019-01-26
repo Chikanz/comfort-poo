@@ -203,6 +203,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4041572518321158}
   - component: {fileID: 95600031447837114}
+  - component: {fileID: 65176832369700868}
   m_Layer: 0
   m_Name: doganim
   m_TagString: Junk
@@ -260,7 +261,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1855499479155734}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.6673403, y: -1.0829679, z: -5.0068073}
+  m_LocalPosition: {x: -23.301577, y: -0.28608513, z: -122.663414}
   m_LocalScale: {x: 1.5000237, y: 1.5000237, z: 1.5000237}
   m_Children:
   - {fileID: 4653366531647588}
@@ -449,6 +450,18 @@ Transform:
   m_Father: {fileID: 4653366531647588}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65176832369700868
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855499479155734}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.20223662, y: 0.3656229, z: 0.79367816}
+  m_Center: {x: -0.00274931, y: 0.17247935, z: -0.05639416}
 --- !u!95 &95600031447837114
 Animator:
   serializedVersion: 3

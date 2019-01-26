@@ -11,6 +11,8 @@ public class player : MonoBehaviour
     public Vector3 Velocity;
     public Vector3 Acceleration;
 
+    public float TurnAngle = 15f;
+
     private KeyCode GetLeft => playerIndex == 0 ? KeyCode.A : KeyCode.LeftArrow;
     private KeyCode GetRight => playerIndex == 0 ? KeyCode.D : KeyCode.RightArrow;
     private KeyCode GetJump => playerIndex == 0 ? KeyCode.W : KeyCode.UpArrow;
@@ -85,6 +87,13 @@ public class player : MonoBehaviour
         {
             manager.Hit(playerIndex == 0);
             GetComponent<Animator>().SetTrigger("Hit");
+
+
+            if(other.GetComponent<NPC>())
+            {
+                Debug.Log("npc");
+                other.GetComponent<Animator>().SetTrigger("Hit");
+            }
         }
     }
 }

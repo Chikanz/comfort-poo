@@ -4,13 +4,19 @@ using UnityEngine;
 
 public class NPC : MonoBehaviour
 {
+    public bool move = true;
+
     public float walkSpeed = 0.001f;
 
 	
 	void Start ()
     {
-        if (Random.Range(0, 2) == 1) transform.Rotate(0, 180, 0); //turn 360 degrees and walk away amirite
-        GetComponent<Animator>().SetBool("Walking", true);
+        if (move)
+        {
+            if (Random.Range(0, 2) == 1) transform.Rotate(0, 180, 0); //turn 360 degrees and walk away amirite
+            var a = GetComponent<Animator>();
+            if(a) a.SetBool("Walking", true);
+        }
 	}
 	
 	// Update is called once per frame
@@ -18,4 +24,5 @@ public class NPC : MonoBehaviour
     {
         transform.position += transform.forward * walkSpeed;
 	}
+
 }
