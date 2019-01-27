@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMan : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class GameMan : MonoBehaviour
     private int[] playerLanes;
 
     public float LampTime;
+
+    public Vector2 TimeDecrease;
+    public Vector2 minSpawnTime;
 
     bool? inFront; //true is player 1 in front
 
@@ -21,7 +25,7 @@ public class GameMan : MonoBehaviour
         {0,1,0,0,0}, //Trash can
         {0,0,1,1,1}, //Doggie
         {0,0,1,1,1}, //NPC
-        {0,1,0,0,0}, //Fire hydrant
+        {1,0,0,0,0}, //Fire hydrant
         {0,0,1,1,1}, //NPC too
         {0,1,0,0,0}, //Phone booth
     };
@@ -30,10 +34,17 @@ public class GameMan : MonoBehaviour
 
     public Transform mover;
 
+    public float timeToIncrease = 20;
+
     [Header("Env")]
     public GameObject[] Obsticles;
     public Vector2 ObsticleTimer;
     public float[] spawnWeight;
+    
+    private int increaseIndex;
+
+    public GameObject winCanvas;
+    private int won;
 
     // Use this for initialization
     void Start ()
@@ -43,6 +54,8 @@ public class GameMan : MonoBehaviour
 
         Invoke(nameof(SpawnObsticle), Random.Range(ObsticleTimer.x, ObsticleTimer.y));
         InvokeRepeating(nameof(SpawnLampPost), 0, LampTime);
+
+        InvokeRepeating(nameof(IncreaseIntensity), timeToIncrease, timeToIncrease);
     }
 
     void SpawnLampPost()
@@ -87,8 +100,16 @@ public class GameMan : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        
+       
 	}
+
+    void IncreaseIntensity()
+    {
+        increaseIndex++;
+        ObsticleTimer -= new Vector2(0.1f, 0.2f);
+        if (ObsticleTimer.x < minSpawnTime.x) ObsticleTimer.x = minSpawnTime.x;
+        if (ObsticleTimer.y < minSpawnTime.y) ObsticleTimer.y = minSpawnTime.y;
+    }
 
     /// <summary>
     /// Put the player passed as param behind
@@ -119,5 +140,19 @@ public class GameMan : MonoBehaviour
         {            
             return Lanes[lane].transform.position + forwardVec; //normal pos
         }
+    }
+
+    public void reportWin(int index)
+    {
+        won = index;
+        winCanvas.SetActive(true);
+        Invoke(nameof(Reveal), 3);
+    }
+
+    public void Reveal()
+    {
+        var s = inFront.Value ? "Black" : "White";
+        winCanvas.GetComponentInChildren<Text>().text = $"{s} hat made it!";
+        winCanvas.GetComponentInChildren<AudioSource>().Play();
     }
 }

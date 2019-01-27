@@ -94,5 +94,10 @@ public class player : MonoBehaviour
                 other.GetComponent<Animator>().SetTrigger("Hit");
             }
         }
+
+        if (other.CompareTag("Home"))
+        {
+            manager.reportWin(playerIndex);
+        }
     }
 }
