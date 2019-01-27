@@ -89,8 +89,7 @@ public class player : MonoBehaviour
 
 
             if(other.GetComponent<NPC>())
-            {
-                Debug.Log("npc");
+            {                
                 other.GetComponent<Animator>().SetTrigger("Hit");
             }
         }

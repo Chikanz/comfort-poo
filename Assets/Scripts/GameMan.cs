@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameMan : MonoBehaviour
@@ -45,6 +46,8 @@ public class GameMan : MonoBehaviour
 
     public GameObject winCanvas;
     private int won;
+
+    bool done;
 
     // Use this for initialization
     void Start ()
@@ -100,7 +103,11 @@ public class GameMan : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-       
+       if(done && Input.anyKey)
+        {
+            var scene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(scene.name);
+        }
 	}
 
     void IncreaseIntensity()
@@ -154,5 +161,6 @@ public class GameMan : MonoBehaviour
         var s = inFront.Value ? "Black" : "White";
         winCanvas.GetComponentInChildren<Text>().text = $"{s} hat made it!";
         winCanvas.GetComponentInChildren<AudioSource>().Play();
+        done = true;
     }
 }
