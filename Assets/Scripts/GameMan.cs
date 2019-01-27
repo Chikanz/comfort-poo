@@ -21,6 +21,9 @@ public class GameMan : MonoBehaviour
         {0,1,0,0,0}, //Trash can
         {0,0,1,1,1}, //Doggie
         {0,0,1,1,1}, //NPC
+        {0,1,0,0,0}, //Fire hydrant
+        {0,0,1,1,1}, //NPC too
+        {0,1,0,0,0}, //Phone booth
     };
 
     public float spawnZ = 34;

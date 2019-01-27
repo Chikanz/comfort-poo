@@ -19,10 +19,12 @@ public class player : MonoBehaviour
 
     private bool jumping;
     public float jumpForce;
-    Vector3 jumpVector;    
+    Vector3 jumpVector;
 
-    public float addTime = 0.2f;
-    private float addTimer = 0;
+    public float jumpHeight;
+
+    public float JumpTime = 0.2f;
+    private float JumpTimer = 0;
 
     float startY;    
 
@@ -38,6 +40,7 @@ public class player : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
+        Vector3 targetPos = manager.GetLanePosition(laneIndex, playerIndex);        
         if (!jumping)
         {
             if (Input.GetKeyDown(GetLeft))
@@ -53,32 +56,28 @@ public class player : MonoBehaviour
             if(Input.GetKeyDown(GetJump))
             {                                
                 jumping = true;
-                addTimer = addTime;
+                JumpTimer = JumpTime;
+                GetComponent<Animator>().SetTrigger("Jump");
             }
         }
         else if(jumping)
         {
-            if(addTimer > 0)
+            if(JumpTimer > 0.1f)
             {
-                Velocity += new Vector3(0, jumpForce, 0);
-                addTimer -= Time.deltaTime;
-            }            
+                if(JumpTimer < (JumpTime - 0.25f)) targetPos.y = jumpHeight;
+                JumpTimer -= Time.deltaTime;
+            }                 
             else
-                Velocity += Acceleration;   
-
-            transform.position += Velocity;
-            
-
-            if(transform.position.y <= startY && addTimer <= 0)
             {
-                jumping = false;                
+                targetPos.y = startY;
+                jumping = false;
             }
         }
 
         laneIndex = Mathf.Clamp(laneIndex, 0, manager.Lanes.Length - 1);
 
 
-        transform.position = Vector3.Lerp(transform.position, manager.GetLanePosition(laneIndex, playerIndex), lerpSpeed);
+        transform.position = Vector3.Lerp(transform.position, targetPos, lerpSpeed);
     }
 
     private void OnTriggerEnter(Collider other)

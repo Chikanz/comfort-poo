@@ -1,20 +1,63 @@
 fileFormatVersion: 2
-guid: 3d25bea14ba864b45b26a7504542ce42
+guid: 16b1feabb4c68ab49adc1dcaaa1896c7
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert7
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: polySurface32
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: lambert7
-    second: {fileID: 2100000, guid: be08e077cec62b8448ce7a3af2b8ddd8, type: 2}
+    100000: BriefCase
+    100002: //RootNode
+    100004: Chest
+    100006: Head
+    100008: Hip
+    100010: ikHandle1
+    100012: ikHandle2
+    100014: LAnkle
+    100016: LCollar
+    100018: LElbow
+    100020: LKnee
+    100022: LShoulder
+    100024: LThigh
+    100026: LToes
+    100028: LWrist
+    100030: RAnkle
+    100032: RCollar
+    100034: RElbow
+    100036: RKnee
+    100038: RShoulder
+    100040: RThigh
+    100042: RToes
+    100044: RWrist
+    100046: Spine
+    400000: BriefCase
+    400002: //RootNode
+    400004: Chest
+    400006: Head
+    400008: Hip
+    400010: ikHandle1
+    400012: ikHandle2
+    400014: LAnkle
+    400016: LCollar
+    400018: LElbow
+    400020: LKnee
+    400022: LShoulder
+    400024: LThigh
+    400026: LToes
+    400028: LWrist
+    400030: RAnkle
+    400032: RCollar
+    400034: RElbow
+    400036: RKnee
+    400038: RShoulder
+    400040: RThigh
+    400042: RToes
+    400044: RWrist
+    400046: Spine
+    2100000: lambert1
+    2300000: BriefCase
+    3300000: BriefCase
+    4300000: BriefCase
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -65,8 +108,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -91,7 +134,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

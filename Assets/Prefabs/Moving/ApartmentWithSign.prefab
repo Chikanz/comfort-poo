@@ -39,6 +39,7 @@ GameObject:
   - component: {fileID: 4567424990657430}
   - component: {fileID: 33017715012950982}
   - component: {fileID: 23641599079259372}
+  - component: {fileID: 114537683043278258}
   m_Layer: 0
   m_Name: SignGGJ
   m_TagString: Untagged
@@ -53,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509784137886974}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.72, y: -0.037794016, z: 0.36379424}
+  m_LocalPosition: {x: -1.982996, y: -1.0829679, z: 22.722864}
   m_LocalScale: {x: 23, y: 23, z: 23}
   m_Children:
   - {fileID: 4567424990657430}
@@ -123,7 +124,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 3d25bea14ba864b45b26a7504542ce42, type: 3}
+  - {fileID: 2100000, guid: be08e077cec62b8448ce7a3af2b8ddd8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -169,3 +170,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.16817874, y: 0.30862516, z: 0.16817874}
   m_Center: {x: 0, y: 0.15556124, z: 0}
+--- !u!114 &114537683043278258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761666442976236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59cb0cb6da71ba74a8f6ba61fae94531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnChance: 0.3
