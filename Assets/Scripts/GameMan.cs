@@ -59,6 +59,13 @@ public class GameMan : MonoBehaviour
         InvokeRepeating(nameof(SpawnLampPost), 0, LampTime);
 
         InvokeRepeating(nameof(IncreaseIntensity), timeToIncrease, timeToIncrease);
+
+        
+    }
+
+    void normalTimeScale()
+    {
+        Time.timeScale = 1;
     }
 
     void SpawnLampPost()

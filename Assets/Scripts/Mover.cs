@@ -17,6 +17,6 @@ public class Mover : MonoBehaviour
 	void Update()
     {
         if(active)
-        transform.position += -Vector3.forward * speed;
+        transform.position += -Vector3.forward * speed * Time.deltaTime;
 	}
 }

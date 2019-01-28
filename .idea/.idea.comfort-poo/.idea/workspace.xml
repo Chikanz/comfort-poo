@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f64f3447-c574-4882-a3a6-8d7d7d81338f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.comfort-poo/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.comfort-poo/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.comfort-poo/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.comfort-poo/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BuildingSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/BuildingSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CarSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/CarSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndHouse.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EndHouse.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Materials/BuildingGGJ.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Materials/BuildingGGJ.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Materials/Grey.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Materials/Grey.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Materials/SignPrune.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Materials/SignPrune.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Materials/SignToilet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Materials/SignToilet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Materials/TallBuilding.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Materials/TallBuilding.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Portag/Materials/ProtagBlackHatGGJ.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Portag/Materials/ProtagBlackHatGGJ.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Portag/Materials/ProtagWhiteHatGGJ.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Portag/Materials/ProtagWhiteHatGGJ.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Portag/ProtagBlackHatGGJ.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Portag/ProtagBlackHatGGJ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Portag/ProtagBlackHatGGJ.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Portag/ProtagBlackHatGGJ.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Portag/ProtagWhiteHatGGJ.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Portag/ProtagWhiteHatGGJ.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Portag/ProtagWhiteHatGGJ.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Portag/ProtagWhiteHatGGJ.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Textures/Protag2GGJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Textures/Protag2GGJ.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Textures/ProtagGGJ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Textures/ProtagGGJ.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/Textures/SignsPruneLight.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/Textures/SignsPruneLight.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Model/lambert7.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Model/lambert7.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mover.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mover.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mum.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mum.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NPC.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NPC.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PostProcessing/cam.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PostProcessing/cam.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Moving/ApartmentGGJWithFireEscape.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Moving/ApartmentGGJWithFireEscape.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Moving/Building 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Moving/Building 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Moving/TallBuildingGGJ.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Moving/TallBuildingGGJ.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Obsticles/Chair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Obsticles/Chair.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RoadSpawner.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/RoadSpawner.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameMan.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameMan.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sign.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sign.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/trashMan.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/trashMan.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+              <folding>
+                <marker date="1548661884123" expanded="false" signature="6:114" ph="..." />
+                <marker date="1548661884123" expanded="true" signature="152:1089" ph="{...}" />
+                <marker date="1548661884123" expanded="true" signature="247:1087" ph="{...}" />
+                <marker date="1548661884123" expanded="true" signature="350:1081" ph="{...}" />
+                <marker date="1548661884123" expanded="true" signature="501:679" ph="{...}" />
+                <marker date="1548661884123" expanded="true" signature="755:936" ph="{...}" />
+                <marker date="1548661884123" expanded="true" signature="953:1071" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameMan.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="858">
+              <caret line="162" column="24" lean-forward="true" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+              <folding>
+                <marker date="1548663038898" expanded="false" signature="6:154" ph="..." />
+                <marker date="1548663038898" expanded="true" signature="192:4701" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="470:780" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="1163:1519" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="1547:1587" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="1613:1671" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="1697:2356" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="1794:1945" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="2028:2167" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="2415:2814" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="2868:3032" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="2906:3029" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="3062:3309" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="3315:3431" ph="/// Put the player passed as param behind ... " />
+                <marker date="1548663038898" expanded="true" signature="3464:3565" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="3623:4307" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="3701:3859" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="3955:4179" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="4192:4301" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="4345:4448" ph="{...}" />
+                <marker date="1548663038898" expanded="true" signature="4474:4699" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/TutorialCanvas.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="718">
+              <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+              <folding>
+                <marker date="1548675133380" expanded="false" signature="6:78" ph="..." />
+                <marker date="1548675133380" expanded="true" signature="145:891" ph="{...}" />
+                <marker date="1548675133380" expanded="true" signature="314:407" ph="{...}" />
+                <marker date="1548675133380" expanded="true" signature="465:486" ph="{...}" />
+                <marker date="1548675133380" expanded="true" signature="519:889" ph="{...}" />
+                <marker date="1548675133380" expanded="true" signature="636:883" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/player.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+              <folding>
+                <marker date="1548676051692" expanded="false" signature="6:78" ph="..." />
+                <marker date="1548676051692" expanded="true" signature="115:2808" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="972:1197" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="1251:2336" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="1364:1808" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="1417:1477" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="1522:1582" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="1625:1798" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="1833:2169" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="1876:2026" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="2060:2159" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="2385:2806" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="2428:2697" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="2579:2687" ph="{...}" />
+                <marker date="1548676051692" expanded="true" signature="2736:2800" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameMan.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/TutorialCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mover.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameMan.cs" />
+        <option value="$PROJECT_DIR$/Assets/TutorialCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/player.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="riderModule/invalid/Default Android Facet" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-497" />
+    <option name="y" value="-21" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="UnityExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
+      </pane>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13965885" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
+      <window_info anchor="bottom" id="Logcat" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Android Profiler" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Device File Explorer" side_tool="true" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding>
+            <marker date="1548661884123" expanded="false" signature="6:114" ph="..." />
+            <marker date="1548661884123" expanded="true" signature="152:1089" ph="{...}" />
+            <marker date="1548661884123" expanded="true" signature="247:1087" ph="{...}" />
+            <marker date="1548661884123" expanded="true" signature="350:1081" ph="{...}" />
+            <marker date="1548661884123" expanded="true" signature="501:679" ph="{...}" />
+            <marker date="1548661884123" expanded="true" signature="755:936" ph="{...}" />
+            <marker date="1548661884123" expanded="true" signature="953:1071" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Mover.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/TutorialCanvas.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="718">
+          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <folding>
+            <marker date="1548675133380" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548675133380" expanded="true" signature="145:891" ph="{...}" />
+            <marker date="1548675133380" expanded="true" signature="314:407" ph="{...}" />
+            <marker date="1548675133380" expanded="true" signature="465:486" ph="{...}" />
+            <marker date="1548675133380" expanded="true" signature="519:889" ph="{...}" />
+            <marker date="1548675133380" expanded="true" signature="636:883" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameMan.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="162" column="24" lean-forward="true" selection-start-line="162" selection-start-column="24" selection-end-line="162" selection-end-column="24" />
+          <folding>
+            <marker date="1548663038898" expanded="false" signature="6:154" ph="..." />
+            <marker date="1548663038898" expanded="true" signature="192:4701" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="470:780" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="1163:1519" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="1547:1587" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="1613:1671" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="1697:2356" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="1794:1945" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="2028:2167" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="2415:2814" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="2868:3032" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="2906:3029" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="3062:3309" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="3315:3431" ph="/// Put the player passed as param behind ... " />
+            <marker date="1548663038898" expanded="true" signature="3464:3565" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="3623:4307" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="3701:3859" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="3955:4179" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="4192:4301" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="4345:4448" ph="{...}" />
+            <marker date="1548663038898" expanded="true" signature="4474:4699" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+          <folding>
+            <marker date="1548676051692" expanded="false" signature="6:78" ph="..." />
+            <marker date="1548676051692" expanded="true" signature="115:2808" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="972:1197" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="1251:2336" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="1364:1808" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="1417:1477" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="1522:1582" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="1625:1798" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="1833:2169" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="1876:2026" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="2060:2159" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="2385:2806" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="2428:2697" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="2579:2687" ph="{...}" />
+            <marker date="1548676051692" expanded="true" signature="2736:2800" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
