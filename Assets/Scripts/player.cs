@@ -28,14 +28,26 @@ public class player : MonoBehaviour
     private static readonly int JUMP = Animator.StringToHash("Jump");
     private Animator animator;
 
+    public AudioSource BGM;
+    private AudioSource AS;
+    private static readonly int NARUTO = Animator.StringToHash("Naruto");
+
     // Use this for initialization
     void Start ()
     {
         animator = GetComponent<Animator>();
         manager = GetComponentInParent<GameMan>();
+        AS = GetComponent<AudioSource>();
         startY = transform.position.y;
 
-        GetComponent<Animator>().SetFloat(OFFSET, Random.Range(0.0f, 1.0f));
+        GetComponent<Animator>().SetFloat(OFFSET, playerIndex == 0 ? 0.4f : 0.5f);
+        
+        Invoke(nameof(becomeAWeeb), BGM.clip.length - 15);
+    }
+
+    void becomeAWeeb()
+    {
+        animator.SetBool(NARUTO, true);        
     }
 	
 	// Update is called once per frame
@@ -86,8 +98,10 @@ public class player : MonoBehaviour
         if(other.CompareTag("Junk"))
         {
             manager.Hit(playerIndex == 0);
-            GetComponent<Animator>().SetTrigger(HIT);
+            animator.SetTrigger(HIT);
 
+            AS.pitch = Random.Range(0.9f, 1.3f);
+            AS.PlayOneShot(AS.clip);
 
             if(other.GetComponent<NPC>())
             {                

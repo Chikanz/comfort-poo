@@ -1,15 +1,18 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 public class GameMan : MonoBehaviour
 {
     public GameObject[] Lanes;
     private player[] players;
-    private int[] playerLanes;
+    private int[] playerLanes; //Length of players, shows which players are in which lane
 
     public float LampTime;
 
@@ -31,6 +34,8 @@ public class GameMan : MonoBehaviour
         {0,1,0,0,0}, //Phone booth
     };
 
+    private int[] PlacementCounter;
+
     public float spawnZ = 34;
 
     public Transform mover;
@@ -45,7 +50,7 @@ public class GameMan : MonoBehaviour
     private int increaseIndex;
 
     public GameObject winCanvas;
-    private int won;
+    private bool? won;
 
     bool done;
 
@@ -54,13 +59,12 @@ public class GameMan : MonoBehaviour
     {
         players = GetComponentsInChildren<player>();
         playerLanes = new int[players.Length];
+        PlacementCounter = new int[Lanes.Length];
 
         Invoke(nameof(SpawnObsticle), Random.Range(ObsticleTimer.x, ObsticleTimer.y));
         InvokeRepeating(nameof(SpawnLampPost), 0, LampTime);
 
-        InvokeRepeating(nameof(IncreaseIntensity), timeToIncrease, timeToIncrease);
-
-        
+        InvokeRepeating(nameof(IncreaseIntensity), timeToIncrease, timeToIncrease);        
     }
 
     void normalTimeScale()
@@ -78,20 +82,39 @@ public class GameMan : MonoBehaviour
         int laneIndex = 0;
         int obsIndex = 0;
 
-        //weight
+        //spawn weight
         while(true)
         {
             obsIndex = Random.Range(1, Obsticles.Length);
             if (Random.Range(0.0f, 1.0f) < spawnWeight[obsIndex]) break;
         }
         
-        //Make sure we're spawning in the right lane
-        while (true)
+        //Spawn in the lane with the lowest count for uniform distribution
+        //mask placement counter with placementMask
+        var masked = new int[Lanes.Length];
+        for (int i = 0; i < Lanes.Length; i++)
         {
-            laneIndex = Random.Range(0, Lanes.Length);
-            if (placementMask[obsIndex, laneIndex] == 1) break;
+            var mask = placementMask[obsIndex, i];
+            masked[i] = mask == 0 ? 999 : PlacementCounter[i];
         }
         
+        //Get lowest index of new list
+        int lowestIndex = -1;
+        int lowestVal = 999;
+        for (int i = 0; i < masked.Length; i++)
+        {
+            if (masked[i] < lowestVal)
+            {
+                lowestVal = masked[i];
+                lowestIndex = i;
+            }
+        }
+        
+        //Place at lowest count index and increment
+        laneIndex = lowestIndex;        
+        PlacementCounter[laneIndex]++;
+        
+        //Then spawn that bad boye
         GameObject g = Obsticles[obsIndex];
         SpawnObsticleInLane(g, laneIndex);
         Invoke(nameof(SpawnObsticle), Random.Range(ObsticleTimer.x, ObsticleTimer.y));
@@ -158,15 +181,28 @@ public class GameMan : MonoBehaviour
 
     public void reportWin(int index)
     {
-        won = index;
+        won = inFront;
         winCanvas.SetActive(true);
         Invoke(nameof(Reveal), 3);
+
+        foreach (var t in players)
+        {
+            t.gameObject.SetActive(false);
+        }
     }
 
     public void Reveal()
     {
-        var s = inFront.Value ? "Black" : "White";
-        winCanvas.GetComponentInChildren<Text>().text = $"{s} hat made it!";
+        if (won != null)
+        {
+            var s = won.Value ? "Black" : "White";
+            winCanvas.GetComponentInChildren<Text>().text = $"{s} hat made it!";
+        }
+        else
+        {
+            winCanvas.GetComponentInChildren<Text>().text = $"You both shit your pants";
+        }
+
         winCanvas.GetComponentInChildren<AudioSource>().Play();
         done = true;
     }
